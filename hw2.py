@@ -14,3 +14,32 @@ the output should be a string formatted as:
  Itinerary 2: Bob - From Tokyo to San Francisco"
 
 '''
+input1 = [("Alice", "New York", "London"), ("Bob", "Tokyo", "San Francisco")]
+
+result = "Itinerary "
+count = 0
+
+
+def itinerary(fl_input, count, result):
+   c = 0
+   count = count + 1
+   for i in fl_input:
+      c = c + 1
+      if(c == 1):
+         result = result + str(c)
+         result = result + ": "
+         result = result + i + " - "
+      if(c == 2):
+         result = result + "From "
+         result = result + i
+      if(c == 3):
+         result = result + " to "
+         result = result + i
+
+         print(result)
+
+
+
+for i in input1:
+   itinerary(i, count, result)
+
