@@ -42,8 +42,8 @@ try:
              print("The Current Library System is printed below.")
              print(library)
         elif(s == 2):
-             x = str(input("Please enter the Title of the Book, Example - 1984 or Brave New World: "))
-             y = str(input("Please enter the Author of the Book, Example - George Orwell or Aldous Huxley: "))
+             x = input("Please enter the Title of the Book, Example - 1984 or Brave New World: ")
+             y = input("Please enter the Author of the Book, Example - George Orwell or Aldous Huxley: ")   
              print("Checking if values entered already exist in library... ")
 
              for t in library:

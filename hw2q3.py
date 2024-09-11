@@ -8,7 +8,8 @@ Task 1: Customer Order Processing Refine your skills in tuple unpacking by manag
 
 Problem Statement: You are given a list of tuples, each representing a customer's order. 
 Each tuple contains the customer's name, the product ordered, and the quantity. 
-Your task is to unpack each tuple and print the order details in a user-friendly format.
+
+* Your task is to unpack each tuple and print the order details in a user-friendly format.
 
 Sample Order Data:
 
@@ -26,3 +27,17 @@ and display output in the console as expected. If you have a function, make sure
 The goal of this note is to ensure that all code in your Python file runs smoothly and that is has been tested.
 
 '''
+orders = [
+    ("Alice", "Laptop", 1),
+    ("Bob", "Camera", 2),
+    ("Daniel", "Phone", 3),
+    ("Rachel", "Watch", 2)
+]
+
+def unpack(orders):
+    for order in orders:
+        print(order[0]+" ordered "+str(order[2])+" "+ order[1]+".")
+
+unpack(orders)
+print()
+unpack(orders)
